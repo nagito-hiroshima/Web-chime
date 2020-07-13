@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>広島キャンパスHP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="play-sound.js"></script>
+  </head>
+
+  <body>
+  <header>
+    <a href="https://www.nnn.ed.jp"target="_blank">  <img src="image/logo.png">
+    </a>
+    <ul>
+      <li><a href="#main">通学コース用チャイム</a></li>
+      <li><a href="#sub">通学コース関連サイト</a></li>
+      <li><a href="https://nnn.ed.jp/blog/">ブログ</a></li>
+      <script data-ad-client="ca-pub-7463095945469415" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </ul>
+  </header>
+  
+  <!--タイトルの領域-->
+  <div class="main"　id = "main">
+  <div class="title">
+        通学コース用チャイム
+</div>
+
+<!--現在時刻取得&表示-->
+<div class="time" id="time">
+  
+  <span id="view_clock"></span>
+  <script type="text/javascript">
+  document.getElementById("view_clock").innerHTML = "地域時間を取得中";
+  timerID = setInterval('clock()',500); //0.5秒毎にclock()を実行  
+</script>
+</div>
+
+    <!--結果の領域-->
+    <div class="result" id="result">
+      停止中
+    </div>
+  
+    <form name="form1" id="from1">
+      <select name="option">
+          <option value=1>チャイム１</option>
+          <option value=2>チャイム２</option>
+          <option value=3>チャイム３</option>
+          <option value=4>チャイム４</option>
+          <option value=5>チャイム５</option>
+      </select>
+    </form>
+    <!--ボタンの領域-->
+
+    <div class="button" >
+      <button type="button" class="now"onClick="noww();">NOW</button>
+      <button type="button"  class="start"onClick="start();">START</button>
+      <button type="button" class="stop"onClick="stop();">STOP</button>
+    </div>
+    <div class="box1">
+    
+
+     
+      <h2>使用方法</h2>
+  
+STARTのボタンを押すことで下記の時間で自動にチャイムが再生される。自動再生を停止したい場合はSTOPのボタンを押すことで停止される。授業の進行によって時間が前後する場合手動でチャイムを鳴らすことができる。またチャイム音色は五種類で変更することも可能
+<img src="image/time.png">    
+</div>
+</div>
+
+    <!--skills-->
+    <div class="sub"id= "sub">
+      <h2 class="h2">通学コース関連サイト</h2>
+      <hr class="white-line">
+      <div class="box">
+        <img src="image/N-yobi-logo.jpg">
+        <a href="https://www.nnn.ed.nico/home"target="_blank">
+          <b>N予備校</b><br>
+        </a>
+              
+      </div>
+      <div class="box">
+        <img src="image/N-high-school-logo.jpg">
+        <a href="https://sites.google.com/nnn.ac.jp/curriculum/"target="_blank">
+          <b>通学用サイト</b><br>
+        </a>
+      </div>
+      <div class="box">
+        <img src="image/program.png">
+        <a href="https://sites.google.com/nnn.ac.jp/programming/%E3%83%9B%E3%83%BC%E3%83%A0"target="_blank">
+          <b>プログラミングサイト</b><br>
+        </a>
+        
+      </div>
+      <div class="box">
+        <img src="image/classroom-logo.png">
+        <a href="https://classroom.google.com/h"target="_blank">
+          <b>classroom</b><br>
+        </a>
+        
+        
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2020- Hiroshima school All rights reserved.
+    </footer>
+  </body>
+
+</html>
