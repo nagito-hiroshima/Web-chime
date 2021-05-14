@@ -65,8 +65,12 @@ function getNow() {//リアルタイムを取得して戻り値に代入する
 var forr = 1;//チャイムを一回だけ再生するため
 function getNow2() {
       var now = new Date();
+      var year = now.getFullYear();
+      var mon = now.getMonth()+1; //１を足すこと
+      var day = now.getDate();
       var hour = now.getHours();
       var min = now.getMinutes();
+      var sec = now.getSeconds();
       
   
       if (forr == 1) {
